@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  transition: all 1000ms ease;
+}
+
+.icon {
+  font-size: 24px;
+  transition: all 1000ms ease;
+  background: transparent;
+  outline: none;
+  border : none;
+}
+
+.dark{
+  color: #fcf7ff;
+  background-color: #000;
+}
+
+.source {
+  margin : 1rem 2rem;
+}
+
+.source a{
+  text-decoration: none;
+  color: inherit;
+}

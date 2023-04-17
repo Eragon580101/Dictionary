@@ -1,0 +1,57 @@
+.meaning {
+  margin: 1rem 2rem;
+
+  .title {
+    font-weight: 600;
+    opacity: 0.6;
+    padding-block: 1rem;
+  }
+
+  &__header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__body {
+    &__defination {
+      &__item {
+        font-size: 1.15rem;
+        margin-bottom: 1rem;
+        padding-top: 1rem;
+
+        &::before {
+          content: "•";
+          margin-right: 0.5rem;
+          color: #a941ec;
+        }
+      }
+    }
+
+    &__example{
+        font-weight: 500;
+        font-size: 14px;
+        opacity: 0.7;
+        margin-bottom: 1rem;
+
+        &::before{
+            content: "Example: \201c";
+            font-weight: 600;
+            opacity: 1;
+        }
+
+        &::after{
+            content: "\201d";
+        }
+    }
+
+    &_synonyms {
+        margin-top: 1rem;
+      span:not(.title) {
+        font-weight: 900;
+        font-size: large;
+        color: #a941ec;
+      }
+    }
+  }
+}

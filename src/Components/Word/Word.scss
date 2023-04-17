@@ -1,0 +1,38 @@
+.word{
+    &.dark{
+        .word__header{
+            &__title{
+                color: #fcf7ff;
+            }
+            &__audio{
+                color: #a941ec;
+            }
+        }
+    }
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 2rem;
+
+        &__title{
+            font-size: 2rem;
+            font-weight: 800;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+
+            &__pronunciation{
+                font-size: 1rem;
+                font-weight: 400;
+                color: #a941ec;
+            }
+        }
+
+        &__audio{
+            cursor: pointer;
+            color: #a941ec;
+        }
+    }
+}
