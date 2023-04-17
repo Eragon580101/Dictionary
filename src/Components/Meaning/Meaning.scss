@@ -23,7 +23,7 @@
         &::before {
           content: "•";
           margin-right: 0.5rem;
-          color: #a941ec;
+          color: var(--color-accent);
         }
       }
     }
@@ -50,7 +50,7 @@
       span:not(.title) {
         font-weight: 900;
         font-size: large;
-        color: #a941ec;
+        color: var(--color-accent);
       }
     }
   }

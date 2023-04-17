@@ -46,6 +46,7 @@ function App() {
             word={data[0].word}
             pronunciation={data[0].phonetic}
             ref = {wordRef}
+            darkMode={darkMode}
           />
           {
             data[0].meanings.map((meaning: any) => {

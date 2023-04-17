@@ -9,14 +9,14 @@
   align-items: center;
   padding: 1rem 2rem;
   transition: all 1000ms ease;
-  box-shadow: var(--box-shadow);
-  background-color: #fcf7ff;
+  // box-shadow: var(--box-shadow);
+  // background-color: #fcf7ff;
 
   &.dark {
-    background-color: #050505;
-    --icon-color: #a941ec;
+    background-color: #000;
+    --icon-color: var(--color-accent);
     --switch-color: #161616;
-    --switch-background: #a941ec;
+    --switch-background: var(--color-accent);
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   }
 

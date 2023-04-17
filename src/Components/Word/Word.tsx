@@ -1,16 +1,27 @@
-import { forwardRef } from 'react';
+import { forwardRef, useEffect } from 'react';
 import './Word.scss';
 
 interface Props {
     word: string;
     pronunciation: string;
+    darkMode: boolean;
 }
 
 type Ref = HTMLDivElement;
 
 export const Word = forwardRef<Ref, Props>((props, ref) => {
 
-    const { word, pronunciation } = props;
+    const { word, pronunciation, darkMode } = props;
+
+    useEffect(() => {
+        if (ref ) {
+        if(darkMode) {
+            ref.current?.classList.add('dark');
+        } else {
+            ref.current?.classList.remove('dark');
+        }
+    }
+    }, [darkMode])
 
     return (
         <div className="word" ref={ref}>
