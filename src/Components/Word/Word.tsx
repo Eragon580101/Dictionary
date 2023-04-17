@@ -1,4 +1,4 @@
-import { forwardRef, useEffect } from 'react';
+import { forwardRef, useEffect, MutableRefObject } from 'react';
 import './Word.scss';
 
 interface Props {
@@ -14,11 +14,11 @@ export const Word = forwardRef<Ref, Props>((props, ref) => {
     const { word, pronunciation, darkMode } = props;
 
     useEffect(() => {
-        if (ref ) {
+    if(ref) {
         if(darkMode) {
-            ref.current?.classList.add('dark');
+            (ref as MutableRefObject<HTMLDivElement>).current?.classList.add('dark');
         } else {
-            ref.current?.classList.remove('dark');
+            (ref as MutableRefObject<HTMLDivElement>).current?.classList.remove('dark');
         }
     }
     }, [darkMode])
