@@ -22,6 +22,10 @@ function App() {
     if (topRef.current) topRef.current.classList.toggle("dark");
   };
 
+  const changeWholeFont = (font: string) => {
+    document.body.style.fontFamily = font;
+  };
+
   const handleSearch = async (
     e: FormEvent<HTMLFormElement>,
     search: string
@@ -37,6 +41,7 @@ function App() {
     <div className="App">
       <TopBar 
         handleDarkMode={handleDarkMode}
+        changeWholeFont={changeWholeFont}
         ref = {topRef}
       />
       <SearchBar ref={formRef} handleSearch={handleSearch} />

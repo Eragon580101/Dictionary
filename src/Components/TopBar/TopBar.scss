@@ -18,6 +18,7 @@
     --switch-color: #161616;
     --switch-background: var(--color-accent);
     --box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    --fonts-background: #000;
   }
 
   .icon {
@@ -31,9 +32,37 @@
     font-size: 1.5rem;
     font-weight: 700;
     cursor: pointer;
+    @media screen and (max-width: 600px) {
+      span{
+        display: none;
+    }
+    }
+      
+  }
 
-    span{
-        transition: none;
+  &__fonts{
+    background-color: var(--fonts-background, #fcf7ff);
+    border-radius: 100vh;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-accent);
+    position: relative;
+    height: 2.4rem;
+    z-index: 1;
+
+    .values{
+      position: absolute;
+      bottom:calc(-2.35 * (2.4rem));
+      left: 0;
+      border-radius: 10px;
+      white-space: nowrap;
+      background-color: var(--fonts-background, #fcf7ff);
+      color: var(--icon-color);
+      padding:0 1rem;
+
+      div{
+        margin: 0.5rem 0;
+        cursor: pointer;
+      }
     }
   }
 
