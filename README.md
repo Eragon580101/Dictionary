@@ -14,7 +14,7 @@
 ## Project setup
 #### First clone the repository
 ``` bash
-git clone https://github.com/Eragon580101/Dictionary
+git clone https://github.com/nabinthapaa/Dictionary
 ```
 
 #### Then install the dependencies
